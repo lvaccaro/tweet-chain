@@ -47,10 +47,10 @@ var parse = function (error, response, body) {
      	console.log("Url: "+pageToVisit);
      	console.log("Height: "+height);
      	console.log("Title:  " + $('title').text());
-     	console.log("Link: "+$('.QuoteTweet-link').attr('href'));
      }
+     
      height++;
-     var tag = $('.QuoteTweet-link');
+     var tag = $("div.permalink-tweet-container div.tweet div.QuoteTweet div.QuoteTweet-container a.QuoteTweet-link ");
      if(tag.length > 0){
      	// next
      	pageToLink = "https://twitter.com"+tag.attr('href');
