@@ -16,7 +16,8 @@ npm install
 
 #### Basic example
 ```
-node index.js -t https://twitter.com/mir_btc/status/901928579159773184 
+$ node index.js -t https://twitter.com/mir_btc/status/901928579159773184 
+
 Visit tweet: https://twitter.com/mir_btc/status/901928579159773184
 Genesis tweet: https://twitter.com/bitstein/status/901458532792512512
 Height: 11
@@ -24,7 +25,7 @@ Height: 11
 
 #### Verbose example
 ```
-node index.js -v -t https://twitter.com/mir_btc/status/901928579159773184
+$ node index.js -v -t https://twitter.com/mir_btc/status/901928579159773184
 
 Visiting page: https://twitter.com/mir_btc/status/901928579159773184
 Url: https://twitter.com/mir_btc/status/901928579159773184
