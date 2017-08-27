@@ -50,9 +50,16 @@ var parse = function (error, response, body) {
      	console.log("Link: "+$('.QuoteTweet-link').attr('href'));
      }
      height++;
-     var pageToLink = "https://twitter.com"+$('.QuoteTweet-link').attr('href');
-     if(pageToLink !== undefined){
+     var tag = $('.QuoteTweet-link');
+     if(tag.length > 0){
+     	// next
+     	pageToLink = "https://twitter.com"+tag.attr('href');
      	request(pageToLink, parse);
+     } else {
+     	// finish
+		console.log("Visit tweet: "+pageToVisit);
+		console.log("Genesis tweet: "+pageToLink);
+		console.log("Height: "+height);
      }
      
    } else {
@@ -62,6 +69,3 @@ var parse = function (error, response, body) {
    
 request(pageToVisit, parse);
 
-console.log("Visit tweet: "+pageToVisit);
-console.log("Genesis tweet: "+pageToLink);
-console.log("Height: "+height);
