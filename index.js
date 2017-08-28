@@ -23,6 +23,7 @@ if (program.tweet == undefined){
 	return;
 } else {
 	pageToVisit = program.tweet;
+	pageToLink = pageToVisit;
 }
 
 if (program.verbose !== undefined ){
@@ -44,7 +45,7 @@ var parse = function (error, response, body) {
      // Parse the document body
      var $ = cheerio.load(body);
      if(debug){
-     	console.log("Url: "+pageToVisit);
+     	console.log("Url: "+pageToLink);
      	console.log("Height: "+height);
      	console.log("Title:  " + $('title').text());
      }
