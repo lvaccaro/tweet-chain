@@ -3,6 +3,8 @@ Calculate the height of a tweet chain
 
 #### Install
 ```
+git clone https://github.com/lvaccaro/tweet-chain
+cd tweet-chain
 npm install
 ```
 
