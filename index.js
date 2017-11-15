@@ -58,6 +58,7 @@ var parse = function (error, response, body) {
      	request(pageToLink, parse);
      } else {
      	// finish
+	height--;
 		console.log("Visit tweet: "+pageToVisit);
 		console.log("Genesis tweet: "+pageToLink);
 		console.log("Height: "+height);
